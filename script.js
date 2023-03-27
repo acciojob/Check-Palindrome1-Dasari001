@@ -3,8 +3,9 @@
 function palindrome(str){
 	flag = true;
    for(var i=0; i<str.length/2; i++){
-	   if(str.charAt(i)!=str.charAt(str.length-1-i))
+	   if(str.charAt(i)!=str.charAt(str.length-1-i)){
 		   flag = false;
+	       break;
    }
 	if(flag==false){
 		return false;
